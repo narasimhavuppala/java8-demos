@@ -15,8 +15,14 @@
   - Reduce does the comuting
 ## Optional Usage
   - Replace null with Optional.Empty;
-	-Ex: Person p=null;
+	- Ex: Person p=null;
 		 Person p=Optional.Empty
-  - Use Optional.of to construct Optional
+  - Ways to create Optional	
+	- From Empty
+		- Optional<String> myval=Optional.empty();
+	- From Non Nullable 
+		- Optional<String> myval = Optional.of("test");
+	- From Non Nullable 
+		- Optional<Car> optCar = Optional.ofNullable(car);
   - Use Otopnal.isPresent to check the prescence of a value
   - Use orElse orElseThrow to deviate when empty value is there

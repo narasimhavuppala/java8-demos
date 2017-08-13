@@ -7,6 +7,8 @@ import java.util.Optional;
 public class Test2Main {
 
 	public static void main(String[] args) {
+		//Optional<String> myval=Optional.empty();
+		Optional<String> myval = Optional.of("test);
 		Optional<String> gender = Optional.of("MALE");
 		String answer1 = "Yes";
 		String answer2 = null;
