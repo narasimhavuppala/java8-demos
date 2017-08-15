@@ -37,8 +37,8 @@
   - StringJoiner is added to the Kitty to meet all needs of String Concatenation
 	- Forget String Buffer and String Builder from Java8
 	- Ex:
-	    StringJoiner sj=new StringJoiner(",","{","}");//First one is the Delimiter for concatenation floowed by Prefix and post fix
-		String finalString=sj.add("one").add("two").add("Three").toString();
-		System.out.println(finalString);
+	    - StringJoiner sj=new StringJoiner(",","{","}");//First one is the Delimiter for concatenation floowed by Prefix and post fix
+		- String finalString=sj.add("one").add("two").add("Three").toString();
+		- System.out.println(finalString);
 	- Output:
-	  {one,two,Three}
+	  - {one,two,Three}
