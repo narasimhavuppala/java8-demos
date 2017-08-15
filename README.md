@@ -1,4 +1,10 @@
 # java8-demos
+## Lambdas
+   - Lambdas are syntax for the Functional programming in Java
+   - Functional programming is separating data and behaviour
+   - Functional programming is a new approach to the programming
+   - With Lamdas ,Java is Now Object Oriented,Functional programming language
+   - Lambdas are not part of the Compiler.They are interpretaed in the JVM/JRE
 ## Date TIME API
   - LocalDate
   - LocalTime
@@ -22,7 +28,7 @@
 		- Optional<String> myval=Optional.empty();
 	- From Non Nullable 
 		- Optional<String> myval = Optional.of("test");
-	- From Non Nullable 
+	- From  Nullable 
 		- Optional<Car> optCar = Optional.ofNullable(car);
   - Use Otopnal.isPresent to check the prescence of a value
   - Use orElse orElseThrow to deviate when empty value is there
