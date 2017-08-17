@@ -32,13 +32,18 @@
 		- Optional<Car> optCar = Optional.ofNullable(car);
   - Use Otopnal.isPresent to check the prescence of a value
   - Use orElse orElseThrow to deviate when empty value is there
-## String Changes
-  - String has the Support of IntStream for Operations
-  - StringJoiner is added to the Kitty to meet all needs of String Concatenation
-	- Forget String Buffer and String Builder from Java8
-	- Ex:
-	    - StringJoiner sj=new StringJoiner(",","{","}");//First one is the Delimiter for concatenation floowed by Prefix and post fix
-		- String finalString=sj.add("one").add("two").add("Three").toString();
-		- System.out.println(finalString);
-	- Output:
-	  - {one,two,Three}
+
+	  
+## Miscelanious
+	- Map enhancements with putIfAbsent,ComputeIfAbsent etc
+	- Java NIO Streams Support
+	- String Changes
+	  - String has the Support of IntStream for Operations
+	  - StringJoiner is added to the Kitty to meet all needs of String Concatenation
+		- Forget String Buffer and String Builder from Java8
+		- Ex:
+			- StringJoiner sj=new StringJoiner(",","{","}");//First one is the Delimiter for concatenation floowed by Prefix and post fix
+			- String finalString=sj.add("one").add("two").add("Three").toString();
+			- System.out.println(finalString);
+		- Output:
+		  - {one,two,Three}

@@ -18,6 +18,10 @@ public class Main {
 		StringJoiner sj=new StringJoiner(",","{","}");
 		String finalString=sj.add("one").add("two").add("Three").toString();
 		System.out.println(finalString);
+		
+		//Test this as well
+		String.join(":", "foobar", "foo", "bar");
+		
 	}
 
 }
