@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class StreamsMain {
 
@@ -17,15 +19,17 @@ public class StreamsMain {
 
 		}
 
-		//students.forEach((s) -> System.out.println(s));
+		// students.forEach((s) -> System.out.println(s));
 
 		// Extract Stream
 
 		Stream<Student> s = students.stream();
-		s.filter(st -> st.getDob().isBefore(LocalDate.now())).forEach(System.out::println);;
-		//s.map(st->st.getEmail().contains("10"));
-		//s.forEach(System.out::println);
+		s.filter(st -> st.getDob().isBefore(LocalDate.now())).forEach(System.out::println);
+		// s.map(st->st.getEmail().contains("10"));
+		// s.forEach(System.out::println);
 
+		Stream<Student> ps = students.parallelStream();
+		ps.peek(i->System.out.println(Thread.currentThread().getName())).count();
 	}
 
 }
