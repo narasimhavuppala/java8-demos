@@ -10,7 +10,7 @@ public class ZonesDemo {
 	public static void main(String[] args) {
 
 		Set<String> zonees=ZoneId.getAvailableZoneIds();
-		//zonees.forEach(System.out::println);
+		zonees.forEach(System.out::println);
 		ZoneId america = ZoneId.of("America/New_York");
 		LocalDateTime localtDateAndTime = LocalDateTime.now();
 		ZonedDateTime dateAndTimeInNewYork = ZonedDateTime.of(localtDateAndTime, america);
