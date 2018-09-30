@@ -5,3 +5,6 @@
 /Streams/bin
 /Streams/.settings
 /Streams/*.classpath
+*.project
+*
+*.classpath
