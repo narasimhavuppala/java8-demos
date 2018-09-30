@@ -16,3 +16,7 @@
 /Lambdas/*.project
 /Lambdas/*
 /Lambdas/*.classpath
+/OptionalNPE/*.gitignore
+/OptionalNPE/*.project
+/OptionalNPE/*
+/OptionalNPE/*.classpath
