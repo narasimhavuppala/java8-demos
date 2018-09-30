@@ -1,1 +1,7 @@
 /bin/
+/StreamsComprehensive/*
+/StreamsComprehensive/*.classpath
+/StreamsComprehensive/*.project
+/Streams/bin
+/Streams/.settings
+/Streams/*.classpath
