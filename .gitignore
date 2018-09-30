@@ -8,3 +8,5 @@
 *.project
 *
 *.classpath
+/Lambdas-01/*
+/Lambdas-01/*.classpath
