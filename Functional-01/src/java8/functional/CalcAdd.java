@@ -58,6 +58,10 @@ public class CalcAdd {
 		
 		DoubleFunction<String> df = (x) -> x + " Converting double to String";
 		System.out.println(df.apply(5));
+		
+		
+		Calculator<Float> calclate= (x,y)-> 0.5f;
+		System.out.println(calclate.calculate(2f, 3f));
 
 	}
 
