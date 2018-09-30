@@ -14,24 +14,15 @@ public class Java8Comparator {
 			students.add(new Student(i, "test" + i, "last" + i, null, null));
 
 		}
-/*
-		// Compare Based on their First Name
-		Collections.sort(students, new Comparator<Student>() {
 
-			@Override
-			public int compare(Student o1, Student o2) {
-				return o1.getFirstName().compareTo(o1.getLastName());
-			}
-		});*/
+		//Optional Type Declaration
+		//Optional parenthesis around parameters
+		//Optional Curly braces
+		//Optional return statement
+		Comparator<Student> c = (arg0, arg1) -> {return arg0.getFirstName().compareTo(arg1.getFirstName());};
+		Collections.sort(students, c);
+		students.forEach(System.out::println);
 
-		Comparator<Student> c = (Student arg0, Student arg1) -> arg0.getFirstName().compareTo(arg0.getLastName());
-		Collections.sort(students,c);
-		//students.forEach(s -> System.out.println(s));
-		students.forEach( System.out::println);
-
-		// for(Student s:students){
-		// System.out.println(s);
-		// }
 	}
 
 }

@@ -8,6 +8,8 @@ public class Student {
 	private String lastName;
 	private String email;
 	private LocalDate dob;
+	
+	public Student() {}
 
 	public Student(int id, String firstName, String lastName, String email, LocalDate dob) {
 
