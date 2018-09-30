@@ -10,3 +10,9 @@
 *.classpath
 /Lambdas-01/*
 /Lambdas-01/*.classpath
+/FunctionalInterfaces/*.project
+/FunctionalInterfaces/*
+/FunctionalInterfaces/*.classpath
+/Lambdas/*.project
+/Lambdas/*
+/Lambdas/*.classpath

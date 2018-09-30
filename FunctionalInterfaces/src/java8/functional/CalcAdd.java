@@ -62,6 +62,11 @@ public class CalcAdd {
 		
 		Calculator<Float> calclate= (x,y)-> 0.5f;
 		System.out.println(calclate.calculate(2f, 3f));
+		
+		
+		System.out.println(calclate.hashCode());
+		System.out.println(calclate.getClass().isInstance(Calculator.class));
+		
 
 	}
 
