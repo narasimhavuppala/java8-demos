@@ -4,7 +4,7 @@ import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-public class Streams13limit {
+public class LimitDemo {
 
     public static void main(String[] args) {
         SecureRandom secureRandom = new SecureRandom(new byte[]{1, 3, 3, 7});

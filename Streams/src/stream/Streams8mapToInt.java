@@ -1,13 +1,15 @@
 package stream;
 
 import java.util.Arrays;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Streams8mapToInt {
 
     public static void main(String[] args) {
-        Arrays.asList("a1", "a2", "a3")
+
+    	Arrays.asList("a1", "a2", "a3")
             .stream()
             .findFirst()
             .ifPresent(System.out::println);
