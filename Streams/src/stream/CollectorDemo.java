@@ -8,7 +8,7 @@ import java.util.StringJoiner;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-public class Streams10Collect {
+public class CollectorDemo {
 
     static class Person {
         String name;

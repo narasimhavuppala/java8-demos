@@ -3,7 +3,7 @@ package stream;
 import java.util.Arrays;
 import java.util.List;
 
-public class Streams11Reduce {
+public class ReducerDemo {
 
     static class Person {
         String name;
@@ -28,8 +28,8 @@ public class Streams11Reduce {
                 new Person("Pamela", 23),
                 new Person("David", 12));
 
-        test1(persons);
-//        test2(persons);
+//        test1(persons);
+        test2(persons);
 //        test3(persons);
 //        test4(persons);
 //        test5(persons);
@@ -40,7 +40,7 @@ public class Streams11Reduce {
         persons
             .stream()
             .reduce((p1, p2) -> p1.age > p2.age ? p1 : p2)
-            .ifPresent(System.out::println);    // Pamela
+            .ifPresent(System.out::println);   
     }
 
     private static void test2(List<Person> persons) {
