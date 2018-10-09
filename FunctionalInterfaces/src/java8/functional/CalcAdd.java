@@ -13,15 +13,13 @@ public class CalcAdd {
 
 	public static void main(String[] args) {
 
-		// SOLID : I stands for Interface Segregation
-		// Defining add methods
-		// Why Should we learn functional interfaces
-		// Any relation with Lambdas
 		Function<Integer, String> add = (x) -> x + "one";
 		System.out.println(add.apply(2));
 		add = (x) -> {
 			return x + "one";
 		};
+		
+		
 
 		/****************** Sepcial Funtions ****************************/
 		// Supplier: Fetch config details
@@ -29,7 +27,7 @@ public class CalcAdd {
 		System.out.println(numberGenerator.get());
 
 		// Consumer: Logging ,Sending to database
-		Consumer<String> printToConsole = x -> System.out.println(x);
+		Consumer<String> printToConsole = (x) -> System.out.println(x);
 
 		printToConsole.accept("hello");
 
@@ -60,7 +58,9 @@ public class CalcAdd {
 		System.out.println(df.apply(5));
 		
 		
-		Calculator<Float> calclate= (x,y)-> 0.5f;
+		Calculator<Float> calclate= (Float x,Float y)-> {
+			return 0.5f;
+			};
 		System.out.println(calclate.calculate(2f, 3f));
 		
 		

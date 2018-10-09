@@ -9,7 +9,7 @@ import java.util.List;
 public class Streams5OrderOfExecution {
 
 	public static void main(String[] args) {
-		List<String> stringCollection = Arrays.asList("d2", "a2","a3", "b1", "b3", "c");
+		List<String> stringCollection = Arrays.asList("d2", "a2","a3", "b1", "b3", "c","a4");
 
 		//Consumer<String> c = System.out::println;
 		stringCollection.stream()
@@ -17,7 +17,7 @@ public class Streams5OrderOfExecution {
 		.peek(System.out::println)
 		.sorted((s1, s2) -> s1.compareTo(s2))
 		.map(s->s.toUpperCase())
-		.peek(System.out::println)
+	//	.peek(System.out::println)
 		.forEach(s -> System.out.println("forEach: " + s));
 
 	}

@@ -16,7 +16,10 @@ public class Streams3SeqPar {
     	//ForkJoinPool
         long t0 = System.nanoTime();
 
-        long count = values.stream().sorted().count();
+        long count = values
+        		     .stream()
+        		     .sorted()
+        		     .count();
         System.out.println(count);
 
         long t1 = System.nanoTime();
@@ -28,8 +31,15 @@ public class Streams3SeqPar {
     public static void sortParallel(List<String> values) {
         // Parallel
         long t0 = System.nanoTime();
+        System.out.println(values.parallelStream().isParallel());
 
-        long count = values.parallelStream().sorted().count();
+        long count = values
+        		.parallelStream()
+        		.peek(x->{
+        			System.out.println(Thread.currentThread().getName());
+        		})
+        		.sorted()
+        		.count();
         System.out.println(count);
 
         long t1 = System.nanoTime();
