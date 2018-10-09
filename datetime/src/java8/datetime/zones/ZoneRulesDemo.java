@@ -1,4 +1,4 @@
-package java8.datetime;
+package java8.datetime.zones;
 
 import java.time.Instant;
 import java.time.ZoneOffset;
