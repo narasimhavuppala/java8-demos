@@ -9,14 +9,19 @@ import java.time.temporal.ChronoUnit;
 public class LocalDateDemo {
 
 	public static void main(String[] args) {
-		LocalDate date = LocalDate.of(2017, 8, 18);
+		
+		LocalDate date = LocalDate.of(2018, 8, 18);
+		
 		LocalDate todayDate = LocalDate.now();
+		
 		if (date.isEqual(todayDate)) {
 			System.out.println("both dates are Same");
 		}
 		// Finding after one week
-		todayDate = todayDate.plus(2, ChronoUnit.MONTHS);
+		todayDate = todayDate.plus(2, ChronoUnit.DAYS);
+		
 		System.out.println(todayDate);
+		
 		int year = date.getYear();
 		Month month = date.getMonth();
 		int day = date.getDayOfMonth();
