@@ -2,6 +2,7 @@ package stream.collector;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import stream.Person;
@@ -15,9 +16,16 @@ public class ToListDemo {
 		persons.add(new Person("Pamela", 23));
 		persons.add(new Person("David", 12));
 
-		List<String> personsModified = persons.stream().map(x -> x.getName()).filter(x -> {
-			return x.startsWith("P");
-		}).collect(Collectors.toList());
+		Set<String> personsModified = persons.stream().map(Person::getName).filter(x -> x.startsWith("P"))
+				.collect(Collectors.toSet());
+		// toSet and toList
+
+		String names = persons.stream().map(Person::getName).filter(x -> x.startsWith("P"))
+				.collect(Collectors.joining("|"));
+		System.out.println(names);
+
+		// Joining
+
 		personsModified.forEach(System.out::println);
 
 	}

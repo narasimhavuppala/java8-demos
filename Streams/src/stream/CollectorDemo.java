@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.StringJoiner;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class CollectorDemo {
 
@@ -23,6 +24,8 @@ public class CollectorDemo {
 		// test5(persons);
 		// test6(persons);
 		test7(persons);
+		
+		Stream<String> ss;
 		// test8(persons);
 		// test9(persons);
 	}
