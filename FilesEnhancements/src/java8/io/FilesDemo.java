@@ -18,7 +18,10 @@ public class FilesDemo {
 		Path filepath = Paths.get(file);
 
 		try (Stream<String> fileStream = Files.lines(filepath)) {
-			System.out.println(fileStream.filter(line -> line.length() > 5).count());
+			System.out.println(fileStream
+					.filter(line -> line.length() > 5)
+					.count()
+					);
 
 		}
 		List<String> lines = new ArrayList<>();// Files.readAllLines(filepath);
