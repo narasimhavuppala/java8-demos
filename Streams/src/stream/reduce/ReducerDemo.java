@@ -15,23 +15,22 @@ public class ReducerDemo {
 		persons.add(new Person("Pamela", 23));
 		persons.add(new Person("David", 12));
 
-		System.out.println("******Test1*********");
+		System.out.println("------Test1---------");
 		test1(persons);
 
-		System.out.println("******Test2*********");
-		test2(persons);
+		/*
+		 * System.out.println("------Test2---------"); test2(persons);
+		 * 
+		 * System.out.println("------Test3---------"); test3(persons);
+		 * 
+		 * System.out.println("------Test4---------"); test4(persons);
+		 * 
+		 * System.out.println("------Test5---------"); test5(persons);
+		 * 
+		 * System.out.println("------Test6---------"); test6(persons);
+		 */
 
-		System.out.println("******Test3*********");
-		test3(persons);
-
-		System.out.println("******Test4*********");
 		test4(persons);
-
-		System.out.println("******Test5*********");
-		test5(persons);
-
-		System.out.println("******Test6*********");
-		test6(persons);
 	}
 
 	private static void test1(List<Person> persons) {

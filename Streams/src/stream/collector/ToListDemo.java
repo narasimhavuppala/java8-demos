@@ -16,7 +16,9 @@ public class ToListDemo {
 		persons.add(new Person("Pamela", 23));
 		persons.add(new Person("David", 12));
 
-		Set<String> personsModified = persons.stream().map(Person::getName).filter(x -> x.startsWith("P"))
+		Set<String> personsModified = persons.stream()
+				.map(Person::getName)
+				.filter(x -> x.startsWith("P"))
 				.collect(Collectors.toSet());
 		// toSet and toList
 

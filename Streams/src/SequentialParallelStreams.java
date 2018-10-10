@@ -12,18 +12,17 @@ public class SequentialParallelStreams {
 		}
 		Stream<Integer> numberStreaam = numbers.stream();
 		System.out.println(numberStreaam.isParallel());
+		
 		Stream<Integer> parallelStream = numbers.parallelStream();
 		System.out.println(parallelStream.isParallel());
 
 		parallelStream.sequential().parallel().sequential();
-
 		System.out.println(parallelStream.isParallel());
 
 		parallelStream.sequential().parallel().sequential().parallel();
-
 		System.out.println(parallelStream.isParallel());
 		
-		//Takeawy-1 : parallel is a flag....last write wins.
+		//Takeaway-1 : parallel is a flag....last write wins.
 		//Takeaway-2: A Stream is Parallel or sequwntial but can not be both
 	}
 

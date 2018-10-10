@@ -20,12 +20,11 @@ public class CollectorDemo {
 
 		// test2(persons);
 		// test3(persons);
-		//test4(persons);
+		// test4(persons);
 		// test5(persons);
 		// test6(persons);
 		test7(persons);
-		
-		Stream<String> ss;
+
 		// test8(persons);
 		// test9(persons);
 	}
@@ -64,8 +63,7 @@ public class CollectorDemo {
 	}
 
 	private static void test7(List<Person> persons) {
-		Collector<Person, StringJoiner, String> personNameCollector = 
-				Collector.of(() -> new StringJoiner(" | "), // supplier
+		Collector<Person, StringJoiner, String> personNameCollector = Collector.of(() -> new StringJoiner(" | "), // supplier
 				(j, p) -> j.add(p.getName().toUpperCase()), // accumulator
 				(j1, j2) -> j1.merge(j2), StringJoiner::toString);
 
